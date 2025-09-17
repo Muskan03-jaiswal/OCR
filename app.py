@@ -40,7 +40,7 @@ def find_rect(image):
 mapping_inverse = {i: chr(i + 65) for i in range(26)}  # Example mapping (A-Z), adjust as needed
 
 def extract(image):
-    model = load_model('/content/CustomCnn_model.h5')
+    model = load_model('CustomCnn_model.h5')
     if model is None:
         return None
 
